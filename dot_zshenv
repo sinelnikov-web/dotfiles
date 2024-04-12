@@ -1,0 +1,90 @@
+. "$HOME/.cargo/env"
+
+function display_index_get() {
+	local cond=$([[ "$1" == "1" ]] && echo "!=" || echo "==")
+	local retina_uuid="37D8832A-2D66-02CA-B9F7-8F30A301B230"
+	local index=$(yabai -m query --displays | jq "first(.[] | select(.uuid $cond \"$retina_uuid\") | .index)")
+
+	if [ -z "$index" ]; then
+		echo "1"
+	else
+		echo $index
+	fi
+}
+
+function yabai_sudoers() {
+	# https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+	# echo "sinelnikovweb ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai)) --load-sa" | pbcopy
+	# command sudo visudo -f /private/etc/sudoers.d/yabai
+}
+
+# function brew() {
+# 	command brew "$@"
+#
+# 	if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+# 		command sketchybar --trigger brew_update
+# 	fi
+# }
+
+# function brew_last_updated() {
+# 	# https://stackoverflow.com/a/67845884
+# 	local CELLAR="$(brew --prefix)/Cellar"
+# 	local QUERY='[inputs | {time, file: (input_filename|sub($cellar;"") | sub("/INSTALL_RECEIPT.json";""))}] | sort_by(.time)[-10:][] | .file'
+# 	command jq -cnr --arg cellar "$CELLAR" $QUERY $CELLAR/*/*/INSTALL_RECEIPT.json
+#
+# }
+
+# function nvim_update() {
+# 	echo "[nvim] updating lazy plugins..."
+# 	command nvim --headless "+Lazy! update" +qa
+# 	echo "[nvim] lazy plugins updated..."
+#
+# 	command chezmoi add "$HOME/.config/nvim/lazy-lock.json"
+# 	echo "[chezmoi] lazy-lock applied..."
+# }
+
+# https://github.com/neovim/neovim/issues/15083#issuecomment-1987041311
+# function nvim_disable_builtin_colorschemes() {
+# 	local base_path="/opt/homebrew/Caskroom/neovim-nightly"
+#
+# 	for dir in $(ls $base_path); do
+# 		if [ -d "$base_path/$dir/nvim-macos/share/nvim/runtime/colors" ]; then
+# 			local dir_path="$base_path/$dir/nvim-macos/share/nvim/runtime/colors"
+#
+# 			cd "$dir_path"
+#
+# 			for file in *.vim; do
+# 				if [ "$file" != "default.vim" ]; then
+# 					mv "$file" "${file%.vim}.vim.disabled"
+# 				fi
+# 			done
+#
+# 			echo "Done $dir_path:"
+#
+# 			ls *.vim
+# 		fi
+# 	done
+# }
+
+# function restart_vm() {
+# 	command yabai --restart-service
+# 	command skhd --restart-service
+# 	command brew services restart borders
+# 	command brew services restart svim
+# 	command brew services restart sketchybar
+#
+# 	echo "vm is restarted"
+# }
+
+function wezterm_update_icon() {
+	cd ~/.config/wezterm/icon
+	command make install
+}
+
+# function sketchybar_update_icons() {
+# 	cd ~/.config/sketchybar-app-font
+# 	command npm install
+# 	command npm run build:install
+# 	command cp dist/sketchybar-app-font.ttf $HOME/Library/Fonts/
+# 	command cp dist/icon_map.lua $DOTFILES_SRC_PATH/dot_config/sketchybar/items/left/spaces/
+# }
