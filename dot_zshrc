@@ -87,14 +87,13 @@ ZSH_COLORIZE_CHROMA_FORMATTER=terminal256
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	zsh-autosuggestions
-	colorize
-	thefuck
-)
+
+source $ZSH_CONFIG_PATH/integrations.zsh
+source $ZSH_CONFIG_PATH/plugins.zsh
 
 source $ZSH/oh-my-zsh.sh
+
+source "$ZSH/custom/plugins/zsh-syntax-highlighting/themes/frappe.zsh"
 
 # User configuration
 
