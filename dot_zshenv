@@ -1,0 +1,2 @@
+source $HOME/.config/zsh/vars.zsh
+. "$HOME/.cargo/env"

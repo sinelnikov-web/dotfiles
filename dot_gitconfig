@@ -1,0 +1,6 @@
+[user]
+	email = sinelnikovweb@yandex-team.ru
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
