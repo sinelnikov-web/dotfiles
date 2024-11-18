@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 b88cdbbd07ca3abbc5538248dfa10b052db739c8 Maksim Sinelnikov <sinelnikovweb@yandex-team.ru> 1725026302 +0500	commit (initial): current
+b88cdbbd07ca3abbc5538248dfa10b052db739c8 f452fc3fa8c224fd02ed0a350c2717f76d6bc845 Maksim Sinelnikov <sinelnikovweb@yandex-team.ru> 1725863962 +0500	commit: fix: change mason package name
+f452fc3fa8c224fd02ed0a350c2717f76d6bc845 009245c06645d511a7c7d35b1865a2aa78e4faba Maksim Sinelnikov <sinelnikovweb@yandex-team.ru> 1726178834 +0500	commit: fixup
+009245c06645d511a7c7d35b1865a2aa78e4faba 07516c600eaaddf348cab78ca0ea8631a96ed48f Maksim Sinelnikov <sinelnikovweb@yandex-team.ru> 1731941847 +0300	commit: stable
