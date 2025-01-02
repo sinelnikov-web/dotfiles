@@ -24,7 +24,7 @@ require("lazy").setup({
 			opts = {
 				colorscheme = {
 					households = {
-						catppuccin = { "catppuccin-frappe" },
+						catppuccin = { "catppuccin-macchiato" },
 					},
 				},
 			},
@@ -47,23 +47,24 @@ require("lazy").setup({
 	checker = { enabled = true }, -- automatically check for plugin updates
 	ui = {
 		backdrop = 100,
-		-- border = "rounded",
+		border = "rounded",
+		size = { width = 0.84, height = 0.62 },
 		icons = { lazy = "(H) ", keys = "󰥻" },
 		title = "  󱎦  󰫮  󰬇  󰬆  ",
 	},
-	performance = {
-		rtp = {
-			-- disable some rtp plugins
-			disabled_plugins = {
-				"gzip",
-				-- "matchit",
-				-- "matchparen",
-				"netrwPlugin",
-				"tarPlugin",
-				"tohtml",
-				"tutor",
-				"zipPlugin",
-			},
-		},
-	},
+	-- performance = {
+	-- 	rtp = {
+	-- 		-- disable some rtp plugins
+	-- 		disabled_plugins = {
+	-- 			"gzip",
+	-- 			-- "matchit",
+	-- 			-- "matchparen",
+	-- 			"netrwPlugin",
+	-- 			"tarPlugin",
+	-- 			"tohtml",
+	-- 			"tutor",
+	-- 			"zipPlugin",
+	-- 		},
+	-- 	},
+	-- },
 })

@@ -10,7 +10,7 @@ config.enable_tab_bar = false
 
 function scheme_for_appearance(appearance)
 	if appearance:find("Dark") then
-		return "Catppuccin Frappe"
+		return "Catppuccin Macchiato"
 	else
 		return "Catppuccin Latte"
 	end
@@ -41,7 +41,7 @@ return {
 
 	window_decorations = "RESIZE",
 	window_padding = { left = 0, right = 0, top = 0, bottom = 0 },
-	window_background_opacity = 0.8,
+	window_background_opacity = 1,
 	macos_window_background_blur = 20,
 
 	debug_key_events = false,
