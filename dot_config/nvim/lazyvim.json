@@ -1,6 +1,8 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.coding.blink",
     "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.editor.telescope",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.helm",
@@ -51,7 +53,6 @@
     "lazyvimx.extras.keys.lines.select-all",
     "lazyvimx.extras.keys.lsp.live-rename",
     "lazyvimx.extras.keys.lsp.restart",
-    "lazyvimx.extras.keys.nav.add-cursor",
     "lazyvimx.extras.keys.nav.better-move-between-words",
     "lazyvimx.extras.keys.nav.go-to-context",
     "lazyvimx.extras.keys.tab.rename",
@@ -72,7 +73,6 @@
     "lazyvimx.extras.mouse.context-menu-close-window",
     "lazyvimx.extras.nav.better-move-between-words",
     "lazyvimx.extras.nav.langmapper",
-    "lazyvimx.extras.nav.multiple-cursors",
     "lazyvimx.extras.optimizations.auto-apply-chezmoi-on-lazy-update",
     "lazyvimx.extras.optimizations.auto-switch-colorscheme-on-signal",
     "lazyvimx.extras.optimizations.auto-update-third-party-tools",
@@ -136,10 +136,11 @@
     "plugins.extras.editor.lazydocker",
     "plugins.extras.ui.panels.buffer-line",
     "plugins.extras.ui.panels.telescope.base",
-    "plugins.extras.ui.editor.line-hints.blame"
+    "plugins.extras.ui.editor.line-hints.blame",
+    "plugins.extras.ui.editor.scroll"
   ],
   "news": {
-    "NEWS.md": "7429",
+    "NEWS.md": "10960",
     "doc/news.txt": "24447"
   },
   "version": 7
