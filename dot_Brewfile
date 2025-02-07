@@ -44,4 +44,4 @@ cask "thefuck"
 cask "diff-so-fancy"
 cask "lazydocker"
 cask "ghostty"
-
+cask "oh-my-posh"

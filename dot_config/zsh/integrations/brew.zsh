@@ -14,3 +14,6 @@ fi
 
 # https://github.com/git-quick-stats/git-quick-stats#macos-homebrew
 export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
+
+source <(fzf --zsh)
+eval "$(zoxide init --cmd cd zsh)"
