@@ -132,9 +132,10 @@
     "plugins.extras.ui.editor.line-hints.blame",
     "plugins.extras.ui.editor.scroll"
   ],
+  "install_version": 7,
   "news": {
     "NEWS.md": "10960",
     "doc/news.txt": "24450"
   },
-  "version": 7
+  "version": 8
 }

@@ -1,5 +1,6 @@
 [user]
-	email = sinelnikovweb@yandex-team.ru
+	email = sinelnikov-web@mail.ru
+	name = sinelnikov-web
 [core]
 	editor = nvim
 [push]
