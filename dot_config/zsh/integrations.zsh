@@ -4,6 +4,7 @@ integrations=(
 	cmd
 	shell
 	dependencies
+	file-listing
 )
 
 source "$ZSH/plugins/zsh-defer/zsh-defer.plugin.zsh"
