@@ -1,5 +1,6 @@
 local lazy_opts = {
 	spec = {
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
 		{ "aimuzov/LazyVimx", import = "lazyvimx.core" },
 		{ import = "lazyvimx.colorschemes.catppuccin" },
 		-- { import = "lazyvimx.colorschemes.tokyonight" },
@@ -20,15 +21,9 @@ local lazy_opts = {
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-local lazyvimx_path = vim.fn.getenv("HOME") .. "/projects/aimuzov/LazyVimx"
-
-if vim.fn.isdirectory(lazyvimx_path) ~= 0 then
-	table.insert(lazy_opts.spec, 1, {
-		"aimuzov/LazyVimx",
-		dir = lazyvimx_path,
-		dev = true,
-	})
-end
+table.insert(lazy_opts.spec, 1, {
+	"aimuzov/LazyVimx",
+})
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
